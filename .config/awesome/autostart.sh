@@ -7,7 +7,7 @@ function run {
 	fi	
 }
 
-compton -bcf -D 8
+picom -b
 
 TRACKPOINT_ID=$(xinput list | grep -i trackpoint | cut -f2 | sed 's/id=//')
 xinput set-prop $TRACKPOINT_ID 275 -0.2
