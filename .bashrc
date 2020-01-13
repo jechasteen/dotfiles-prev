@@ -9,6 +9,8 @@ alias ls='ls --color=auto'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 PS1='[\u@\h \W]\$ '
 
+export EDITOR=vim
+
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ !  "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
         exec tmux
 fi
