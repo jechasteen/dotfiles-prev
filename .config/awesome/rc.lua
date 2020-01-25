@@ -63,7 +63,8 @@ end
 -- entries must be comma-separated
 run_once({ "wmname LG3D" }) -- Fix java problem
 run_once({ "nm-applet -sm-disable" }) -- Network manager tray icon
-run_once({ "albert", "urxvtd" })
+run_once({ "albert", "urxvtd", "picom -bfc -D3 --vsync" })
+run_once({ "/home/jechasteen/.screenlayout/screen.sh" }) -- xrandr script
 
 -- Variable definitions
 local themes = {
@@ -77,7 +78,7 @@ local themes = {
 local chosen_theme = themes[1]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
-local terminal     = "urxvtc"
+local terminal     = "alacritty"
 local editor       = os.getenv("EDITOR") or "nano"
 local gui_editor   = "gvim"
 local browser      = "firefox"
