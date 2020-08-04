@@ -78,11 +78,10 @@ local themes = {
 local chosen_theme = themes[1]
 local modkey       = "Mod4"
 local altkey       = "Mod1"
-local terminal     = "alacritty"
-local editor       = os.getenv("EDITOR") or "nano"
-local gui_editor   = "gvim"
+local terminal     = "urxvtc"
+local editor       = os.getenv("EDITOR") or "vim"
 local browser      = "firefox"
-local guieditor    = "subl3"
+local guieditor    = "code"
 local scrlocker    = "xlock"
 local home   = os.getenv("HOME")
 
@@ -885,6 +884,10 @@ awful.rules.rules = {
       properties = { floating = true } },
     { rule = { class = "Gimp", role = "gimp-image-window" },
       properties = { maximized = true } },
+    { rule = { class = "albert" },
+      properties = { border_width = 0, skip_taskbar = true, floating = true,
+                     requests_no_titlebar = true },
+     }
 }
 
 -- Signals

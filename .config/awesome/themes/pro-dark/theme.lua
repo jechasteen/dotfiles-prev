@@ -6,7 +6,7 @@ local taglist_types = {
     "sticks",         -- 2
 }
 
-local chosen_taglist_type = taglist_types[2]
+local chosen_taglist_type = taglist_types[1]
 local theme           = {}
 theme.dir             = os.getenv("HOME") .. "/.config/awesome/themes/pro-dark"
 --theme.dir             = os.getenv("HOME") .. "/code/awesome-pro/themes/pro-dark"
@@ -18,7 +18,7 @@ theme.font            = "Terminus 10"
 theme.calendar_font   = "Meslo LGS Regular 10"
 theme.fs_font         = "Meslo LGS Regular 10"
 
-theme.useless_gap     = dpi(4)
+theme.useless_gap     = dpi(3)
 
 theme.fg_normal         = "#888888"
 theme.fg_focus          = "#e4e4e4"

@@ -8,10 +8,10 @@ URxvt*scrollWithBuffer: True
 URxvt*scrollTtyKeypress: True
 URxvt*secondaryScreen: 1
 URxvt*secondaryScroll: 0
-URxvt.font: xft:SourceCodePro:regular:size=10
-URxvt.boldFont: xft:SourceCodePro:bold:size=10
-URxvt.italicFont: xft:SourceCodePro:italic:size=10
-URxvt.boldItalicFont: xft:SourceCodePro:bolditalic:size=10
+URxvt.font: xft:SourceCodePro:regular:size=11
+URxvt.boldFont: xft:SourceCodePro:bold:size=11
+URxvt.italicFont: xft:SourceCodePro:italic:size=11
+URxvt.boldItalicFont: xft:SourceCodePro:bolditalic:size=11
 URxvt.reverseVideo: True
 URxvt.perl-ext-common: default,clipboard,matcher,tabbed
 ! Low contrast theme, based on Zenburn <http://slinky.imukuppi.org/zenburnpage/>
